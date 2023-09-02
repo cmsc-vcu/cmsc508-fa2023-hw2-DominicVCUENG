@@ -1,7 +1,7 @@
 ---
 title: Welcome to Homework 2
 date: last-modified
-author: (your name goes here!)
+author: Dominic Mason
 format:
     gfm:
         mermaid-format: png
@@ -18,11 +18,51 @@ Imagine you're designing a Library Management System for a small local library. 
 
 Identify and document the entities, attributes, and relationships using Chen notation.
 
-*(remove this block and add your your solution here!)*
+```{dot}
+//| echo: false
+graph LibraryManagementSystem {
+    layout=neato;
+    scale=1.1;
+    node [shape=box]; LibraryMember; Book;
+    node [shape=ellipse]; ISBN; Title; PublicationYear; MemberID; Name; ContactInfo;
+    node [shape=diamond,style=filled,color=lightgrey]; Checkout
+    
+    Book -- Checkout [label="n",len=1.50]
+    LibraryMember -- Checkout [label="can",len=1.50]
+    
+    
+    LibraryMember -- MemberID
+    LibraryMember -- Name
+    LibraryMember -- ContactInfo
+    Book -- ISBN
+    Book -- Title
+    Book -- PublicationYear
+  
+}
+```
 
 ## Design Task 2
 
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
-*(remove this block and add your your solution here!)*
+<center>
+:::: {.columns}
 
+::: {.column}
+```{mermaid}
+erDiagram
+    LibraryMember ||--|{  Book : canCheckout
+
+    Book{
+    string ISBN
+    string Title
+    string PublicationYear
+    }
+
+    LibraryMember{
+    string MemberID
+    string Name
+    string ContactInformation
+    }
+```
+:::

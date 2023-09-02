@@ -1,6 +1,6 @@
 # Welcome to Homework 2
-(your name goes here!)
-2023-08-30
+Dominic Mason
+2023-09-01
 
 This is my solution to homework 2. I’m using Quarto render this document
 from a QMD file to a regular MD file for display on GITHUB.
@@ -20,11 +20,29 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
-*(remove this block and add your your solution here!)*
+<div>
+
+<div>
+
+<img src="readme_files\figure-commonmark\dot-figure-1.png"
+style="width:7in;height:5in" />
+
+</div>
+
+</div>
 
 ## Design Task 2
 
 Identify and document the entities, attributes, and relationships using
 Crow’s Foot notation.
 
-*(remove this block and add your your solution here!)*
+<center>
+
+:::: {.columns}
+
+<div class="column">
+
+<img src="readme_files\figure-commonmark\mermaid-figure-1.png"
+style="width:1.83in;height:3.33in" />
+
+</div>
