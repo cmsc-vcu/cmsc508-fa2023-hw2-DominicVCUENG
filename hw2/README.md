@@ -38,8 +38,6 @@ Crow’s Foot notation.
 
 <center>
 
-:::: {.columns}
-
 <div class="column">
 
 <img src="readme_files\figure-commonmark\mermaid-figure-1.png"
