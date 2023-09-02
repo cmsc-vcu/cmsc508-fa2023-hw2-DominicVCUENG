@@ -46,7 +46,6 @@ graph LibraryManagementSystem {
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
 <center>
-:::: {.columns}
 
 ::: {.column}
 ```{mermaid}
